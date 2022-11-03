@@ -1,6 +1,5 @@
 <?php 
-   
-   // Database connection credentials
+    /** Database Credentials */
     $hostname = 'localhost';  
     $database = 'phpdemo'; 
     $db_user = 'admin'; 
