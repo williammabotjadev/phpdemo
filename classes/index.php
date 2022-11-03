@@ -105,7 +105,8 @@ $app->set_surname("Mabotja");
 $app->set_email_address("williammabotjadev@gmail->com");
 $app->set_tel_number("0605360059");
 $app->set_required_movein_date("03/11/2022");
-$app->set_required_movein_time("09:00");
+$time = date('2022/11/03');
+$app->set_required_movein_time($time);
 var_dump($app);
 
 ?>
