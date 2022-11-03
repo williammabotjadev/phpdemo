@@ -11,7 +11,7 @@ class Application {
     public $required_movein_time;
     public $property_id;
 
-    public function __construct($tenant_id = NULL, $first_name = NULL, $surname = NULL, $email_address = NULL, $tel_number = NULL, $required_movein_date = NULL, $required_movein_time = NULL, $property_id = NULL)
+    public function __construct($tenant_id, $first_name = NULL, $surname = NULL, $email_address = NULL, $tel_number = NULL, $required_movein_date = NULL, $required_movein_time = NULL, $property_id)
     {
         $this->tenand_id = $tenand_id;
         $this->first_name = $first_name;
@@ -103,5 +103,8 @@ class Application {
         $this->property_id = $property_id;
     }
 }
+
+$app = Application($tenand_id = "ABC", $property_id = "123");
+var_dump($app);
 
 ?>
