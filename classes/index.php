@@ -13,7 +13,7 @@ class Application {
 
     public function __construct($tenant_id, $property_id)
     {
-        $this->tenand_id = $tenand_id;
+        $this->tenand_id = $tenant_id;
         $this->property_id = $property_id;
     }
 
