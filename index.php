@@ -1,7 +1,7 @@
 <?php 
     require "config.php";
     require "./classes/index.php";
-    require "./uploads/csv_job.php";
+    require "./static/csv_job.php";
 
 ?>
 <head>
