@@ -99,7 +99,7 @@ class Application {
 }
 
 $app = new Application($tenand_id = "ABC", $property_id = "123");
-var_dump($app);
+
 $app->set_first_name("William");
 $app->set_surname("Mabotja");
 $app->set_email_address("williammabotjadev@gmail->com");
@@ -110,6 +110,5 @@ $time = date("19:00");
 
 $validate_time = (($time[3] == "0" || "3") && ($time[4] == "0")) ? $time : "Invalid Move in Time";
 $app->set_required_movein_time($validate_time);
-var_dump($app);
 
 ?>
