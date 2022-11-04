@@ -17,33 +17,27 @@
     <?php 
         $count = 0;
         $file = fopen('./static/dummy_data.csv', 'r');
-        echo "<table border='1' width='50%'>";
+        echo "<html><body><center><table border='1'>\n\n";
         echo "<br />";
         while(($row = fgetcsv($file, 1000, ',')) !== false)
         {
-            
+            echo "<tr>";
             foreach($row as $item) 
             {   
                 if ($count > 0)
                 {
-                    echo "<tr>";
-                    echo $item;
-                    echo "\t";
-                    echo "</tr>";
+                    echo "<td>".$item."</td>";
                 } else {
-                    echo "<tr>";
-                    echo $item;
-                    echo "\t";
-                    echo "</tr>";
+                    echo "<th>".$item."</th>";
                     $count++;
                 }
                
             }
 
-            echo "<br />";
+            echo "</tr>";
           
         }
-        echo "</table>";
+        echo "\n</table></center></body></html>";
         fclose($file);
     ?>
     </div>
